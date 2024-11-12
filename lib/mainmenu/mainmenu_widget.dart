@@ -7,7 +7,6 @@ import 'package:flutter_card_swiper/flutter_card_swiper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'mainmenu_model.dart';
 export 'mainmenu_model.dart';
 
@@ -60,7 +59,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment(0, 0),
+                      alignment: const Alignment(0.0, 0),
                       child: TabBar(
                         labelColor: FlutterFlowTheme.of(context).primaryText,
                         unselectedLabelColor:
@@ -70,10 +69,10 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                   fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
-                        unselectedLabelStyle: TextStyle(),
+                        unselectedLabelStyle: const TextStyle(),
                         indicatorColor: Colors.black,
-                        padding: EdgeInsets.all(4),
-                        tabs: [
+                        padding: const EdgeInsets.all(4.0),
+                        tabs: const [
                           Tab(
                             text: 'Learn',
                             icon: FaIcon(
@@ -100,8 +99,8 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                           Stack(
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0, 150, 0, 150),
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 150.0, 0.0, 150.0),
                                 child: FlutterFlowSwipeableStack(
                                   onSwipeFn: (index) {},
                                   onLeftSwipe: (index) {},
@@ -123,7 +122,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                     'shoppingCopy',
                                                     extra: <String, dynamic>{
                                                       kTransitionInfoKey:
-                                                          TransitionInfo(
+                                                          const TransitionInfo(
                                                         hasTransition: true,
                                                         transitionType:
                                                             PageTransitionType
@@ -136,7 +135,8 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                 },
                                                 child: ClipRRect(
                                                   borderRadius:
-                                                      BorderRadius.circular(8),
+                                                      BorderRadius.circular(
+                                                          8.0),
                                                   child: Image.asset(
                                                     'assets/images/istockphoto-857744820-612x612.jpg',
                                                     width: double.infinity,
@@ -152,7 +152,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                         .bodyMedium
                                                         .override(
                                                   fontFamily: 'Lato',
-                                                  fontSize: 40,
+                                                  fontSize: 40.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   shadows: [
@@ -161,14 +161,14 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: Offset(2.0, 2.0),
+                                                      offset: const Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.04, -0.71),
                                                 child: Text(
                                                   ' 在餐厅',
@@ -177,7 +177,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                       .bodyMedium
                                                       .override(
                                                     fontFamily: 'Lato',
-                                                    fontSize: 35,
+                                                    fontSize: 35.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                     shadows: [
@@ -187,7 +187,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                                     context)
                                                                 .secondaryText,
                                                         offset:
-                                                            Offset(2.0, 2.0),
+                                                            const Offset(2.0, 2.0),
                                                         blurRadius: 2.0,
                                                       )
                                                     ],
@@ -195,7 +195,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.01, -0.44),
                                                 child: Text(
                                                   ' zài cāntīng',
@@ -204,7 +204,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                       .bodyMedium
                                                       .override(
                                                     fontFamily: 'Lato',
-                                                    fontSize: 30,
+                                                    fontSize: 30.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                     shadows: [
@@ -214,7 +214,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                                     context)
                                                                 .secondaryText,
                                                         offset:
-                                                            Offset(2.0, 2.0),
+                                                            const Offset(2.0, 2.0),
                                                         blurRadius: 2.0,
                                                       )
                                                     ],
@@ -226,8 +226,8 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                       () => Stack(
                                             children: [
                                               Align(
-                                                alignment:
-                                                    AlignmentDirectional(0, 0),
+                                                alignment: const AlignmentDirectional(
+                                                    0.0, 0.0),
                                                 child: InkWell(
                                                   splashColor:
                                                       Colors.transparent,
@@ -242,7 +242,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                       'shoppingCopyCopy',
                                                       extra: <String, dynamic>{
                                                         kTransitionInfoKey:
-                                                            TransitionInfo(
+                                                            const TransitionInfo(
                                                           hasTransition: true,
                                                           transitionType:
                                                               PageTransitionType
@@ -256,7 +256,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                   child: ClipRRect(
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            8),
+                                                            8.0),
                                                     child: Image.asset(
                                                       'assets/images/download_(12).jpeg',
                                                       width: double.infinity,
@@ -273,7 +273,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                         .bodyMedium
                                                         .override(
                                                   fontFamily: 'Lato',
-                                                  fontSize: 40,
+                                                  fontSize: 40.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   shadows: [
@@ -282,15 +282,15 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: Offset(2.0, 2.0),
+                                                      offset: const Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
-                                                    -1, -0.67),
+                                                alignment: const AlignmentDirectional(
+                                                    -1.0, -0.67),
                                                 child: Text(
                                                   '在杂货店',
                                                   style: FlutterFlowTheme.of(
@@ -298,7 +298,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                       .bodyMedium
                                                       .override(
                                                     fontFamily: 'Lato',
-                                                    fontSize: 35,
+                                                    fontSize: 35.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                     shadows: [
@@ -308,7 +308,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                                     context)
                                                                 .secondaryText,
                                                         offset:
-                                                            Offset(2.0, 2.0),
+                                                            const Offset(2.0, 2.0),
                                                         blurRadius: 2.0,
                                                       )
                                                     ],
@@ -316,7 +316,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -0.96, -0.33),
                                                 child: Text(
                                                   'zài zá huò diàn',
@@ -325,7 +325,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                       .bodyMedium
                                                       .override(
                                                     fontFamily: 'Lato',
-                                                    fontSize: 30,
+                                                    fontSize: 30.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                     shadows: [
@@ -335,7 +335,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                                     context)
                                                                 .secondaryText,
                                                         offset:
-                                                            Offset(2.0, 2.0),
+                                                            const Offset(2.0, 2.0),
                                                         blurRadius: 2.0,
                                                       )
                                                     ],
@@ -357,7 +357,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                     'shopping',
                                                     extra: <String, dynamic>{
                                                       kTransitionInfoKey:
-                                                          TransitionInfo(
+                                                          const TransitionInfo(
                                                         hasTransition: true,
                                                         transitionType:
                                                             PageTransitionType
@@ -370,7 +370,8 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                 },
                                                 child: ClipRRect(
                                                   borderRadius:
-                                                      BorderRadius.circular(8),
+                                                      BorderRadius.circular(
+                                                          8.0),
                                                   child: Image.asset(
                                                     'assets/images/download_(3).png',
                                                     width: double.infinity,
@@ -387,7 +388,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                         .bodyMedium
                                                         .override(
                                                   fontFamily: 'Lato',
-                                                  fontSize: 40,
+                                                  fontSize: 40.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   shadows: [
@@ -396,14 +397,14 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: Offset(2.0, 2.0),
+                                                      offset: const Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.09, -0.72),
                                                 child: Text(
                                                   ' 在购物中心',
@@ -412,7 +413,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                       .bodyMedium
                                                       .override(
                                                     fontFamily: 'Inter',
-                                                    fontSize: 35,
+                                                    fontSize: 35.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                     shadows: [
@@ -422,7 +423,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                                     context)
                                                                 .secondaryText,
                                                         offset:
-                                                            Offset(2.0, 2.0),
+                                                            const Offset(2.0, 2.0),
                                                         blurRadius: 2.0,
                                                       )
                                                     ],
@@ -430,7 +431,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -0.95, -0.41),
                                                 child: Text(
                                                   'zài gòuwù zhōngxīn',
@@ -439,7 +440,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                       .bodyMedium
                                                       .override(
                                                     fontFamily: 'Inter',
-                                                    fontSize: 30,
+                                                    fontSize: 30.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                     shadows: [
@@ -449,7 +450,7 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                                     context)
                                                                 .secondaryText,
                                                         offset:
-                                                            Offset(2.0, 2.0),
+                                                            const Offset(2.0, 2.0),
                                                         blurRadius: 2.0,
                                                       )
                                                     ],
@@ -468,21 +469,21 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0, -0.92),
+                                alignment: const AlignmentDirectional(0.0, -0.92),
                                 child: Text(
                                   'Choose what you want to learn!',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                     fontFamily: 'Lato',
-                                    fontSize: 40,
+                                    fontSize: 40.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w900,
                                     shadows: [
                                       Shadow(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
-                                        offset: Offset(2.0, 2.0),
+                                        offset: const Offset(2.0, 2.0),
                                         blurRadius: 2.0,
                                       )
                                     ],
@@ -507,30 +508,32 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                             .secondaryBackground,
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 12),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(16, 8, 16, 12),
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
                                                 borderRadius:
-                                                    BorderRadius.circular(16),
+                                                    BorderRadius.circular(16.0),
                                                 child: Image.network(
                                                   'https://source.unsplash.com/random/1280x720?beach&7',
                                                   width: double.infinity,
-                                                  height: 230,
+                                                  height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(16, 0, 16, 4),
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      16.0, 0.0, 16.0, 4.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -551,8 +554,9 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(16, 0, 16, 4),
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      16.0, 0.0, 16.0, 4.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -561,9 +565,9 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                16, 4, 4, 0),
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(16.0, 4.0,
+                                                                4.0, 0.0),
                                                     child: Text(
                                                       '4.25',
                                                       style: FlutterFlowTheme
@@ -589,30 +593,32 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                             .secondaryBackground,
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 12),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(16, 8, 16, 12),
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
                                                 borderRadius:
-                                                    BorderRadius.circular(16),
+                                                    BorderRadius.circular(16.0),
                                                 child: Image.network(
                                                   'https://source.unsplash.com/random/1280x720?beach&9',
                                                   width: double.infinity,
-                                                  height: 230,
+                                                  height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(16, 0, 16, 4),
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      16.0, 0.0, 16.0, 4.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -633,8 +639,9 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(16, 0, 16, 4),
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      16.0, 0.0, 16.0, 4.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -643,9 +650,9 @@ class _MainmenuWidgetState extends State<MainmenuWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                16, 4, 4, 0),
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(16.0, 4.0,
+                                                                4.0, 0.0),
                                                     child: Text(
                                                       '4.25',
                                                       style: FlutterFlowTheme

@@ -8,7 +8,6 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -68,13 +67,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
             mainAxisSize: MainAxisSize.max,
             children: [
               Container(
-                width: 400,
-                height: 826,
+                width: 400.0,
+                height: 826.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0, 0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -84,7 +83,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       context.pushNamed(
                         'mainmenu',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                             duration: Duration(milliseconds: 100),
@@ -93,11 +92,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       );
                     },
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
-                        'assets/images/YenYenLogo.png',
-                        width: 200,
-                        height: 200,
+                        'assets/images/image-removebg-preview_(29).png',
+                        width: 200.0,
+                        height: 200.0,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -112,4 +111,3 @@ class _HomePageWidgetState extends State<HomePageWidget>
     );
   }
 }
-
