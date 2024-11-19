@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366474321017",
+    "project_id": "yenyen-df2e8",
+    "storage_bucket": "yenyen-df2e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366474321017:android:c25bb593d051db926208a8",
+        "android_client_info": {
+          "package_name": "com.example.yenyen.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLFR1skx_DaJrrZVXaSATekhYBVwWDS3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
