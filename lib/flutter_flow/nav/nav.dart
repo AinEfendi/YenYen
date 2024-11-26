@@ -53,11 +53,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: '/shopping',
           builder: (context, params) => ShoppingWidget(),
         ),
-        FFRoute(
-          name: 'signup',
-          path: '/signup',
-          builder: (context, params) => SignupWidget(),
-        ),
+        // FFRoute(
+        //   name: 'signup',
+        //   path: '/signup',
+        //   builder: (context, params) => SignupWidget(),
+        // ),
         FFRoute(
           name: 'Lessonlist',
           path: '/lessonlist',
