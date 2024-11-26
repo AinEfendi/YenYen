@@ -1,11 +1,17 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import 'package:yenyen/listening/listening_widget.dart';
 
 import '/index.dart';
+import '/main.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/lat_lng.dart';
+import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -30,37 +36,77 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => const HomePageWidget(),
+      errorBuilder: (context, state) => HomePageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const HomePageWidget(),
+          builder: (context, _) => HomePageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
           path: '/homePage',
-          builder: (context, params) => const HomePageWidget(),
+          builder: (context, params) => HomePageWidget(),
         ),
         FFRoute(
           name: 'shopping',
           path: '/shopping',
-          builder: (context, params) => const ShoppingWidget(),
+          builder: (context, params) => ShoppingWidget(),
         ),
         FFRoute(
-          name: 'listeningCopy',
-          path: '/listeningCopy',
-          builder: (context, params) => const ListeningWidget(),
+          name: 'signup',
+          path: '/signup',
+          builder: (context, params) => SignupWidget(),
+        ),
+        FFRoute(
+          name: 'Lessonlist',
+          path: '/lessonlist',
+          builder: (context, params) => LessonlistWidget(),
+        ),
+        FFRoute(
+          name: 'shoppingCopy2',
+          path: '/shoppingCopy2',
+          builder: (context, params) => ShoppingCopy2Widget(),
+        ),
+        FFRoute(
+          name: 'shoppingCopy2Copy',
+          path: '/shoppingCopy2Copy',
+          builder: (context, params) => ShoppingCopy2CopyWidget(),
+        ),
+        FFRoute(
+          name: 'shoppingCopy2CopyCopy',
+          path: '/shoppingCopy2CopyCopy',
+          builder: (context, params) => ShoppingCopy2CopyCopyWidget(),
+        ),
+        FFRoute(
+          name: 'shoppingCopy2CopyCopy2',
+          path: '/shoppingCopy2CopyCopy2',
+          builder: (context, params) => ShoppingCopy2CopyCopy2Widget(),
+        ),
+        FFRoute(
+          name: 'shoppingCopy',
+          path: '/shoppingCopy',
+          builder: (context, params) => ShoppingCopyWidget(),
         ),
         FFRoute(
           name: 'shoppingCopyCopy',
           path: '/shoppingCopyCopy',
-          builder: (context, params) => const ShoppingCopyCopyWidget(),
+          builder: (context, params) => ShoppingCopyCopyWidget(),
         ),
         FFRoute(
-          name: 'mainmenu',
-          path: '/mainmenu',
-          builder: (context, params) => const MainmenuWidget(),
+          name: 'shoppingCopyCopyCopy',
+          path: '/shoppingCopyCopyCopy',
+          builder: (context, params) => ShoppingCopyCopyCopyWidget(),
+        ),
+        FFRoute(
+          name: 'shoppingCopyCopyCopyCopy',
+          path: '/shoppingCopyCopyCopyCopy',
+          builder: (context, params) => ShoppingCopyCopyCopyCopyWidget(),
+        ),
+        FFRoute(
+          name: 'shoppingCopyCopyCopyCopyCopy',
+          path: '/shoppingCopyCopyCopyCopyCopy',
+          builder: (context, params) => ShoppingCopyCopyCopyCopyCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -224,7 +270,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

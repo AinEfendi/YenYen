@@ -17,4 +17,3 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   @override
   void dispose() {}
 }
-

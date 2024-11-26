@@ -6,25 +6,26 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'shopping_model.dart';
-export 'shopping_model.dart';
+import 'shopping_copy2_copy_model.dart';
+export 'shopping_copy2_copy_model.dart';
 
-class ShoppingWidget extends StatefulWidget {
-  const ShoppingWidget({super.key});
+class ShoppingCopy2CopyWidget extends StatefulWidget {
+  const ShoppingCopy2CopyWidget({super.key});
 
   @override
-  State<ShoppingWidget> createState() => _ShoppingWidgetState();
+  State<ShoppingCopy2CopyWidget> createState() =>
+      _ShoppingCopy2CopyWidgetState();
 }
 
-class _ShoppingWidgetState extends State<ShoppingWidget> {
-  late ShoppingModel _model;
+class _ShoppingCopy2CopyWidgetState extends State<ShoppingCopy2CopyWidget> {
+  late ShoppingCopy2CopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ShoppingModel());
+    _model = createModel(context, () => ShoppingCopy2CopyModel());
   }
 
   @override
@@ -83,29 +84,13 @@ class _ShoppingWidgetState extends State<ShoppingWidget> {
                       Align(
                         alignment: AlignmentDirectional(-1.0, -1.0),
                         child: Text(
-                          'At a Shopping Mall',
+                          'Asking for\nDirections',
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
                                 fontFamily: 'Lato',
                                 letterSpacing: 0.0,
                               ),
-                        ),
-                      ),
-                      Align(
-                        alignment: AlignmentDirectional(-1.0, -1.0),
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 4.0, 0.0, 0.0),
-                          child: Text(
-                            'Asking for assistance',
-                            style: FlutterFlowTheme.of(context)
-                                .labelLarge
-                                .override(
-                                  fontFamily: 'Lato',
-                                  letterSpacing: 0.0,
-                                ),
-                          ),
                         ),
                       ),
                     ],
@@ -279,7 +264,7 @@ class _ShoppingWidgetState extends State<ShoppingWidget> {
                                           width: 214.0,
                                           height: 54.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0xFF815B5B),
+                                            color: Color(0xFF9E7676),
                                             borderRadius:
                                                 BorderRadius.circular(24.0),
                                           ),
@@ -478,7 +463,7 @@ class _ShoppingWidgetState extends State<ShoppingWidget> {
                                           width: 214.0,
                                           height: 54.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0xFF815B5B),
+                                            color: Color(0xFF9E7676),
                                             borderRadius:
                                                 BorderRadius.circular(24.0),
                                           ),

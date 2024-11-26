@@ -6,25 +6,25 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'shopping_model.dart';
-export 'shopping_model.dart';
+import 'shopping_copy2_model.dart';
+export 'shopping_copy2_model.dart';
 
-class ShoppingWidget extends StatefulWidget {
-  const ShoppingWidget({super.key});
+class ShoppingCopy2Widget extends StatefulWidget {
+  const ShoppingCopy2Widget({super.key});
 
   @override
-  State<ShoppingWidget> createState() => _ShoppingWidgetState();
+  State<ShoppingCopy2Widget> createState() => _ShoppingCopy2WidgetState();
 }
 
-class _ShoppingWidgetState extends State<ShoppingWidget> {
-  late ShoppingModel _model;
+class _ShoppingCopy2WidgetState extends State<ShoppingCopy2Widget> {
+  late ShoppingCopy2Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ShoppingModel());
+    _model = createModel(context, () => ShoppingCopy2Model());
   }
 
   @override
@@ -83,7 +83,7 @@ class _ShoppingWidgetState extends State<ShoppingWidget> {
                       Align(
                         alignment: AlignmentDirectional(-1.0, -1.0),
                         child: Text(
-                          'At a Shopping Mall',
+                          'At a Restaurant',
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
@@ -98,7 +98,7 @@ class _ShoppingWidgetState extends State<ShoppingWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
-                            'Asking for assistance',
+                            'Ordering Food & Drinks',
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -257,74 +257,80 @@ class _ShoppingWidgetState extends State<ShoppingWidget> {
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 10.0, 0.0, 0.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Container(
-                                    width: 318.0,
-                                    height: 53.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10.0, 0.0, 10.0, 0.0),
-                                        child: Container(
-                                          width: 214.0,
-                                          height: 54.0,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xFF815B5B),
-                                            borderRadius:
-                                                BorderRadius.circular(24.0),
-                                          ),
-                                          child: Align(
-                                            alignment: AlignmentDirectional(
-                                                -1.0, -1.0),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      10.0, 4.0, 0.0, 0.0),
-                                              child: Text(
-                                                'Asking for assistance',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelLarge
-                                                        .override(
-                                                          fontFamily: 'Lato',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryText,
-                                                          letterSpacing: 0.0,
-                                                        ),
+                            Align(
+                              alignment: AlignmentDirectional(1.0, 0.0),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 10.0, 0.0, 0.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Container(
+                                      width: 318.0,
+                                      height: 53.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(1.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 0.0, 10.0, 0.0),
+                                          child: Container(
+                                            width: 214.0,
+                                            height: 54.0,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFF594545),
+                                              borderRadius:
+                                                  BorderRadius.circular(24.0),
+                                            ),
+                                            child: Align(
+                                              alignment: AlignmentDirectional(
+                                                  -1.0, -1.0),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        10.0, 4.0, 0.0, 0.0),
+                                                child: Text(
+                                                  'Asking for assistance',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .labelLarge
+                                                      .override(
+                                                        fontFamily: 'Lato',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                ),
                                               ),
                                             ),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  Align(
-                                    alignment: AlignmentDirectional(1.0, 0.0),
-                                    child: Container(
-                                      width: 50.0,
-                                      height: 50.0,
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Image.asset(
-                                        'assets/images/3d-kid-avatar-young-boy-66213.jpg',
-                                        fit: BoxFit.cover,
+                                    Align(
+                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      child: Container(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Image.asset(
+                                          'assets/images/3d-kid-avatar-young-boy-66213.jpg',
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                             Align(
@@ -478,7 +484,7 @@ class _ShoppingWidgetState extends State<ShoppingWidget> {
                                           width: 214.0,
                                           height: 54.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0xFF815B5B),
+                                            color: Color(0xFF594545),
                                             borderRadius:
                                                 BorderRadius.circular(24.0),
                                           ),

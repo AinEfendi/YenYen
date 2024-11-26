@@ -8,7 +8,6 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -68,8 +67,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             mainAxisSize: MainAxisSize.max,
             children: [
               Container(
-                width: 400,
-                height: 826,
+                width: 400.0,
+                height: 826.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
@@ -77,15 +76,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0, 0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         decoration: BoxDecoration(),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 250, 0, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 250.0, 0.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
                                 focusColor: Colors.transparent,
@@ -104,14 +103,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   );
                                 },
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
                                     Theme.of(context).brightness ==
                                             Brightness.dark
                                         ? 'assets/images/yenyenlogo.png'
                                         : 'assets/images/image-removebg-preview_(29).png',
-                                    width: 261,
-                                    height: 200,
+                                    width: 261.0,
+                                    height: 200.0,
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -141,4 +140,3 @@ class _HomePageWidgetState extends State<HomePageWidget>
     );
   }
 }
-
